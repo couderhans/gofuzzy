@@ -1,7 +1,7 @@
-package fuzzylogic
+package logic
 
 import (
-	"membershipfunctions"
+	"gofuzzy/membershipfunctions"
 	"strings"
 )
 

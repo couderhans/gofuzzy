@@ -1,7 +1,7 @@
 package membershipfunctions
 
 import (
-	"membershipfunctions/coordinatesystem"
+	"gofuzzy/membershipfunctions/coordinatesystem"
 )
 
 type Triangle struct {

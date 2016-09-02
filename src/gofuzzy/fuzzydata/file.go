@@ -1,11 +1,11 @@
-package fuzzysetdata
+package fuzzydata
 
 import (
 	"io"
 	"os"
 )
 
-func ReadFile(source string) string {
+func ReadFile(source string) (n string, err error) {
 
 	// open input file
 	fi, err := os.Open(source)
@@ -31,8 +31,8 @@ func ReadFile(source string) string {
 			break
 		}
 	}
-
-	return string(buf)
+	n = string(buf)
+	return n, err
 }
 
 func WriteToFile(destination string, buf []byte) {
